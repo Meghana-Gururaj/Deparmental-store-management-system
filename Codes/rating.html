@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Rateus</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<style media="screen">
+body{
+ background-image: url(r.jpg);
+ background-repeat: no-repeat center fixed;
+ background-size: 100%;
+    }
+</style>
+
+<style media="screen">
+form {
+  margin:0 auto;
+  width:300px
+}
+input {
+  margin-bottom:3px;
+  padding:10px;
+  width: 100%;
+  border:1px solid #CCC
+}
+button {
+  padding:10px
+}
+label {
+  cursor:pointer
+}
+#form-switch {
+  display:none
+}
+#register-form {
+  display:none
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+<div class="navbar-header">
+<a href="#" class="navbar-brand">DEPARTMENTAL STORE</a>
+<ul class="nav navbar-nav">
+        <li><a href="home.jsp">Items</a></li>
+        <li><a href="order.html">Create Order</a></li>
+        <li><a href="orderplaced.html">Cart</a></li>
+        <li><a href="cancelorder.html">Drop Items</a></li>
+        <li><a href="contact.jsp">Contact us</a></li>
+        <li><a href="rating.html">Rate us</a></li>
+        <li><a href="index.jsp">Logout</a></li>
+</ul>
+</nav>
+</div>
+</div><br><br><br>
+<center><h1>FEEDBACK</h1></center>
+<form method="post" action="rating.jsp">
+<b><label>ENTER YOUR NAME</label></b>
+<input type="text" name="name"/><br><br><br>
+<label>YOUR RATINGS</label>&nbsp;
+<select name="rating">
+<option value="5">5</option>
+<option value="4">4</option>
+<option value="3">3</option>
+<option value="2">2</option>
+<option value="1">1</option>
+</select><br><br><br>
+<b><label>YOUR SUGGESTIONS</label></b>
+<input type="text" name="remarks"/>
+<br><br>
+<center>
+ <b><button type="submit" value="ok"><b>SUBMIT</b></button></b>
+ </center>
+</form>
+</body>
+</html>

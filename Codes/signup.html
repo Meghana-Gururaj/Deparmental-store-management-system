@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>signup page</title>
+<style media="screen">
+body{
+ background-image: url(cart1.jpg);
+ background-repeat: no-repeat center fixed;
+ background-size: 100%;
+    }
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style media="screen">
+form {
+  margin:0 auto;
+  width:300px
+}
+input {
+  margin-bottom:3px;
+  padding:10px;
+  width: 100%;
+  border:1px solid #CCC
+}
+button {
+  padding:10px
+}
+label {
+  cursor:pointer
+}
+#form-switch {
+  display:none
+}
+#register-form {
+  display:none
+}
+</style>
+</head>
+<body>
+<form method="post" action="signup.jsp">
+  <b>
+ <center>
+<font size=10 >SIGN UP</font></center>
+ <label>ENTER YOUR NAME:</label>
+ <input name="uname" type="text" placeholder="Username" required/><br><br>
+ <label>ENTER YOUR EMAILID:</label> 
+ <input name="email" type="email" placeholder="Email" required/><br><br>
+ <label>CREATE NEW PASSWORD:</label>
+ <input name="pass" type="password" placeholder="Password" required/><br><br>
+ <label>ENTER DOB:</label>
+ <input id="dob" name="dob" type="date" placeholder="yyyy-mm-dd" required/><br><br>
+ <label>PHONE NUMBER:</label>
+ <input name="num" type="text" placeholder="Phone number" required/><br><br>
+ <label>ENTER YOUR ADDRESS:</label>
+ <input type="text" name="addr" placeholder="Home Address" required/>
+ </b>
+ <br><br>
+ <button><b>SUBMIT</b></button>
+ <button type="reset" value="Reset"><b>CANCEL</b></button>
+</form>
+</body>
+</html>
